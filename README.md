@@ -1,6 +1,8 @@
 ## Car Game
 
-A small full‑stack project with a FastAPI backend and a React + Vite + TypeScript frontend. Build and play on grid tracks, validate levels, and auto‑solve paths.
+A strategic car racing game where you navigate through challenging grid-based tracks. Collect all flags while avoiding walls, use teleporters to jump across the map, and find the optimal path to victory. Features an intelligent solver that can automatically find the best route through any track.
+
+![Game Screenshot](sample.jpeg)
 
 ### Quick start
 
