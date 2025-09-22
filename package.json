@@ -1,0 +1,12 @@
+{
+	"name": "car-game",
+	"private": true,
+	"scripts": {
+		"dev": "concurrently -k -n BACKEND,FRONTEND -c cyan,magenta \"npm:dev:backend\" \"npm:dev:frontend\"",
+		"dev:backend": "cd backend && ([ -x .venv/bin/uvicorn ] || (python3 -m venv .venv && .venv/bin/pip install -r requirements.txt)) && .venv/bin/uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+		"dev:frontend": "cd frontend && npm run dev"
+	},
+	"devDependencies": {
+		"concurrently": "^9.0.1"
+	}
+}
